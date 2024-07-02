@@ -1,0 +1,101 @@
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/white"
+    tools:context=".CategoryFragment">
+
+    <ImageView
+        android:id="@+id/imageView5"
+        android:layout_width="106sp"
+        android:layout_height="88sp"
+        android:layout_marginStart="152dp"
+        android:layout_marginTop="644dp"
+        android:rotationY="-180"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/identify"
+        tools:src="@drawable/identify" />
+
+    <Button
+        android:id="@+id/btn_category_lifestyle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="76sp"
+        android:text="Tentang Aplikasi"
+        android:backgroundTint="#C80707"
+        android:textStyle="italic"
+
+        android:textColor="@color/white"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/btn_dataset"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="148sp"
+        android:text="Dataset"
+        android:textColor="@color/white"
+        android:textStyle="italic"
+        android:backgroundTint="#C80707"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/btn_fitur"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="224sp"
+        android:text="Fitur"
+        android:textStyle="italic"
+        android:textColor="@color/white"
+        android:backgroundTint="#C80707"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/btn_model"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="300sp"
+        android:text="Model"
+        android:textStyle="italic"
+        android:textColor="@color/white"
+        android:backgroundTint="#C80707"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/btn_simulasimodel"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="376sp"
+        android:text="Simulasi Model"
+        android:textStyle="italic"
+        android:textColor="@color/white"
+        android:backgroundTint="#C80707"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageButton
+        android:id="@+id/btnHome"
+        android:layout_width="46sp"
+        android:layout_height="33sp"
+        android:layout_marginTop="24sp"
+        android:background="@color/white"
+        android:gravity="left"
+        android:textSize="10sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/baseline_arrow_back_24"
+        tools:srcCompat="@drawable/baseline_arrow_back_24" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

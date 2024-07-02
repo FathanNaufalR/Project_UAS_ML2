@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main_navigation"
+    app:startDestination="@id/HomeFragment">
+    <activity
+        android:id="@+id/ProfileActivity"
+        android:name="com.example.identify_stroke.ProfileActivity"
+        android:label="activity_profile"
+        tools:layout="@layout/activity_profile">
+    </activity>
+    <fragment
+        android:id="@+id/CategoryFragment"
+        android:name="com.example.identify_stroke.CategoryFragment"
+        android:label="fragment_category"
+        tools:layout="@layout/fragment_category">
+        <action
+            android:id="@+id/action_CategoryFragment_to_DetailCategoryFragment"
+            app:destination="@id/DetailCategoryFragment" />
+        <action
+            android:id="@+id/action_CategoryFragment_to_HomeFragment"
+            app:destination="@id/HomeFragment"
+            app:exitAnim="@anim/nav_default_enter_anim" />
+        <action
+            android:id="@+id/action_CategoryFragment_to_DatasetFragment"
+            app:destination="@id/Dataset" />
+        <action
+            android:id="@+id/action_CategoryFragment_to_Fitur"
+            app:destination="@id/Fitur" />
+        <action
+            android:id="@+id/action_CategoryFragment_to_model"
+            app:destination="@id/Model" />
+        <action
+            android:id="@+id/action_CategoryFragment_to_simulasimodel"
+            app:destination="@id/simulasimodel" />
+    </fragment>
+    <fragment
+        android:id="@+id/DetailCategoryFragment"
+        android:name="com.example.identify_stroke.DetailCategoryFragment"
+        android:label="fragment_detail_category"
+        tools:layout="@layout/fragment_detail_category">
+        <action
+            android:id="@+id/action_DetailCategoryFragment_to_HomeFragment"
+            app:destination="@id/HomeFragment"
+            app:launchSingleTop="true"
+            app:popUpTo="@+id/HomeFragment"
+            app:popUpToInclusive="true" />
+    </fragment>
+    <fragment
+        android:id="@+id/HomeFragment"
+        android:name="com.example.identify_stroke.HomeFragment"
+        android:label="fragment_home"
+        tools:layout="@layout/fragment_home">
+        <action
+            android:id="@+id/action_HomeFragment_to_CategoryFragment"
+            app:enterAnim="@anim/nav_default_enter_anim"
+            app:exitAnim="@anim/nav_default_exit_anim"
+            app:popEnterAnim="@anim/nav_default_pop_enter_anim"
+            app:popExitAnim="@anim/nav_default_pop_exit_anim" />
+        <action
+            android:id="@+id/action_HomeFragment_to_profileActivity"
+            app:destination="@id/CategoryFragment"
+            app:enterAnim="@anim/nav_default_enter_anim"
+            app:exitAnim="@anim/nav_default_exit_anim"
+            app:launchSingleTop="true" />
+
+    </fragment>
+    <fragment
+        android:id="@+id/Dataset"
+        android:name="com.example.identify_stroke.Dataset"
+        android:label="fragment_Dataset"
+        tools:layout="@layout/fragment_dataset" />
+    <fragment
+        android:id="@+id/Fitur"
+        android:name="com.example.identify_stroke.Fitur"
+        android:label="fragment_Fitur"
+        tools:layout="@layout/fragment_Fitur" />
+    <fragment
+        android:id="@+id/Model"
+        android:name="com.example.identify_stroke.Model"
+        android:label="fragment_model"
+        tools:layout="@layout/fragment_model" />
+    <activity
+        android:id="@+id/simulasimodel"
+        android:name="com.example.identify_stroke.simulasimodel"
+        android:label="activity_simulasimodel"
+        tools:layout="@layout/activity_simulasimodel" />
+    </navigation>

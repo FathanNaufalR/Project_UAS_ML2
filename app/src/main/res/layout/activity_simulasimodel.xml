@@ -1,0 +1,245 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".simulasimodel"
+        android:background="@color/white">
+        <ImageView
+            android:id="@+id/imageView2"
+            android:layout_width="match_parent"
+            android:layout_height="80sp"
+            android:background="#C80707"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            tools:layout_editor_absoluteY="0sp"
+            app:circularflow_defaultRadius="20sp"/>
+
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="306sp"
+            android:layout_height="53sp"
+            android:layout_marginStart="16sp"
+            android:textStyle="italic"
+            android:layout_marginTop="24sp"
+            android:text="Simulasi Model"
+            android:textColor="@color/white"
+            android:textSize="24sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/textView12"
+            android:layout_width="263sp"
+            android:layout_height="28sp"
+            android:layout_marginStart="16sp"
+            android:layout_marginTop="88sp"
+            android:text="Note : Tidak bisa menerima nilai null !"
+            android:textColor="@color/black"
+            android:textSize="12sp"
+            android:textStyle="italic"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/textInputLayout"
+            android:layout_width="409sp"
+            android:layout_height="wrap_content"
+            tools:ignore="MissingConstraints"
+
+            tools:layout_editor_absoluteX="1sp"
+            tools:layout_editor_absoluteY="330sp">
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/gender"
+            android:layout_width="264sp"
+            android:layout_height="38sp"
+            android:layout_marginTop="132sp"
+            android:hint="gender"
+            android:text="0"
+            android:textColor="@color/black"
+            android:textColorHint="@color/black"
+            android:inputType="numberDecimal"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:ignore="HardcodedText" />
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/age"
+            android:layout_width="264sp"
+            android:layout_height="38sp"
+            android:layout_marginTop="188sp"
+            android:hint="age"
+            android:text="61"
+            android:textColor="@color/black"
+            android:textColorHint="@color/black"
+            android:inputType="numberDecimal"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:ignore="HardcodedText" />
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/hypertension"
+            android:layout_width="264sp"
+            android:layout_height="38sp"
+            android:layout_marginTop="248sp"
+            android:text="0"
+            android:textColor="@color/black"
+            android:textColorHint="@color/black"
+            android:hint="hypertension"
+            android:inputType="numberDecimal"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:ignore="HardcodedText" />
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/heartdisease"
+            android:layout_width="264sp"
+            android:layout_height="38sp"
+            android:layout_marginTop="300sp"
+            android:text="0"
+            android:textColor="@color/black"
+            android:hint="heartdisease"
+            android:textColorHint="@color/black"
+            android:inputType="numberDecimal"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:ignore="HardcodedText" />
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/ever_married"
+            android:layout_width="264sp"
+            android:layout_height="38sp"
+            android:layout_marginTop="352sp"
+            android:hint="ever_married"
+            android:inputType="numberDecimal"
+            android:text="1"
+            android:textColor="@color/black"
+            android:textColorHint="@color/black"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:ignore="HardcodedText" />
+
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/work_type"
+            android:layout_width="264sp"
+            android:layout_height="38sp"
+            android:layout_marginTop="408sp"
+            android:hint="work_type"
+            android:inputType="numberDecimal"
+            android:text="3"
+            android:textColor="@color/black"
+            android:textColorHint="@color/black"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.496"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:ignore="HardcodedText" />
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/Residence_type"
+            android:layout_width="264sp"
+            android:layout_height="38sp"
+            android:layout_marginTop="472sp"
+            android:hint="Residence_type"
+            android:inputType="numberDecimal"
+            android:text="0"
+            android:textColor="@color/black"
+            android:textColorHint="@color/black"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.496"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:ignore="HardcodedText" />
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/avg_glucose_level"
+            android:layout_width="264sp"
+            android:layout_height="38sp"
+            android:layout_marginTop="532sp"
+            android:hint="avg_glucose_level"
+            android:inputType="numberDecimal"
+            android:text="202.21"
+            android:textColor="@color/black"
+            android:textColorHint="@color/black"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:ignore="HardcodedText" />
+
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/bmi"
+            android:layout_width="264sp"
+            android:layout_height="38sp"
+            android:layout_marginTop="588sp"
+            android:hint="bmi"
+            android:inputType="numberDecimal"
+            android:text="28.893327"
+            android:textColor="@color/black"
+            android:textColorHint="@color/black"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.496"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:ignore="HardcodedText" />
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/smoking_status"
+            android:layout_width="264sp"
+            android:layout_height="38sp"
+            android:layout_marginTop="644sp"
+            android:hint="smoking_status"
+            android:inputType="numberDecimal"
+            android:text="2"
+            android:textColor="@color/black"
+            android:textColorHint="@color/black"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.496"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:ignore="HardcodedText" />
+
+        <Button
+            android:id="@+id/btnpredict"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:backgroundTint="#C80707"
+
+            android:text="Predict"
+            android:textColor="@color/black"
+            android:textColorHint="@color/black"
+            android:textStyle="italic"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/smoking_status" />
+
+        <TextView
+            android:id="@+id/txtResult"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Hasil : \nTekan Predict untuk mendapatkan hasil"
+            android:textColor="@color/black"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/btnpredict"
+            app:layout_constraintVertical_bias="0.0" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>

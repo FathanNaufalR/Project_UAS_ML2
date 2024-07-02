@@ -1,0 +1,232 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true">
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".Model"
+        android:background="@color/white">
+
+
+        <ImageView
+            android:id="@+id/imageView2"
+            android:layout_width="match_parent"
+            android:layout_height="80sp"
+            android:background="#C80707"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            tools:layout_editor_absoluteY="0sp"
+            app:circularflow_defaultRadius="20sp"/>
+
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="306sp"
+            android:layout_height="53sp"
+            android:layout_marginStart="16sp"
+            android:layout_marginTop="24sp"
+            android:text="Model"
+            android:textStyle="italic"
+            android:textColor="@color/white"
+            android:textSize="24sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/textView19"
+            android:layout_width="347sp"
+            android:layout_height="59sp"
+            android:layout_marginStart="24sp"
+            android:layout_marginTop="104sp"
+            android:text="Untuk memulai modelling , pertama-tama kita merubah kolom yang bertipe data String/Object (Kategorik) dirubah ke Integer (Numerik)"
+            android:textColor="@color/black"
+            android:textSize="13sp"
+            android:textStyle=""
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <ImageView
+            android:id="@+id/imageView6"
+            android:layout_width="327sp"
+            android:layout_height="98sp"
+            android:layout_marginStart="24sp"
+            android:layout_marginTop="16sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView19"
+            tools:src="@drawable/labelencoder"
+            app:srcCompat="@drawable/labelencoder"/>
+
+        <TextView
+            android:id="@+id/textView20"
+            android:layout_width="347sp"
+            android:layout_height="59sp"
+            android:layout_marginStart="24sp"
+            android:layout_marginTop="16sp"
+            android:text="Lalu masukan kolom dataframe pada variable X , dengan mendrop kolom stroke, dan id, tetapi kolom stroke akan di jadikan label atau variable y. Kita melakukan set test size nya 30% atau 0.3"
+            android:textColor="@color/black"
+            android:textSize="13sp"
+            android:textStyle=""
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/imageView6" />
+
+        <ImageView
+            android:id="@+id/imageView7"
+            android:layout_width="354sp"
+            android:layout_height="137sp"
+            android:layout_marginStart="24sp"
+            android:layout_marginTop="16sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView20"
+            app:srcCompat="@drawable/traintestsplit"
+            tools:src="@drawable/traintestsplit" />
+
+        <TextView
+            android:id="@+id/textView21"
+            android:layout_width="347sp"
+            android:layout_height="59sp"
+            android:layout_marginStart="24sp"
+            android:layout_marginTop="16sp"
+            android:text="Lalu gunakan standard scaler untuk mengtransform data supaya bisa di gunakan pada model"
+            android:textColor="@color/black"
+            android:textSize="13sp"
+            android:textStyle=""
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/imageView7" />
+
+        <ImageView
+            android:id="@+id/imageView8"
+            android:layout_width="354sp"
+            android:layout_height="137sp"
+            android:layout_marginStart="24sp"
+            android:layout_marginTop="16sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView21"
+            app:srcCompat="@drawable/scaler"
+            tools:src="@drawable/scaler" />
+
+        <TextView
+            android:id="@+id/textView22"
+            android:layout_width="347sp"
+            android:layout_height="85sp"
+            android:layout_marginStart="24sp"
+            android:layout_marginTop="16sp"
+            android:text="Selanjutnya kita terapkan Sequential pada model , dan menaruh 32 pada dense sehingga model memiliki 32 neuron dan output, dan kita set 1 pada sigmoid karena klasifikasi nya hanya satu dari dua pilihan yaitu Pernah Stroke dan Tidak pernah Stroke"
+            android:textColor="@color/black"
+            android:textSize="13sp"
+            android:textStyle=""
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/imageView8" />
+
+        <ImageView
+            android:id="@+id/imageView9"
+            android:layout_width="354sp"
+            android:layout_height="137sp"
+            android:layout_marginStart="24sp"
+            android:layout_marginTop="16sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView22"
+            app:srcCompat="@drawable/sequent"
+            tools:src="@drawable/sequent" />
+
+        <TextView
+            android:id="@+id/textView23"
+            android:layout_width="347sp"
+            android:layout_height="59sp"
+            android:layout_marginStart="24sp"
+            android:layout_marginTop="16sp"
+            android:text="Selanjutnya kita compile modelnya."
+            android:textColor="@color/black"
+            android:textSize="13sp"
+            android:textStyle=""
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/imageView9" />
+
+        <ImageView
+            android:id="@+id/imageView10"
+            android:layout_width="354sp"
+            android:layout_height="137sp"
+            android:layout_marginStart="24sp"
+            android:layout_marginTop="16sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView23"
+            app:srcCompat="@drawable/summary"
+            tools:src="@drawable/summary" />
+
+        <TextView
+            android:id="@+id/textView24"
+            android:layout_width="347sp"
+            android:layout_height="59sp"
+            android:layout_marginStart="24sp"
+            android:layout_marginTop="16sp"
+            android:text="Ini merupakan tampilan dari Plot Model nya."
+            android:textColor="@color/black"
+            android:textSize="13sp"
+            android:textStyle=""
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/imageView10" />
+
+        <ImageView
+            android:id="@+id/imageView11"
+            android:layout_width="354sp"
+            android:layout_height="137sp"
+            android:layout_marginStart="24sp"
+            android:layout_marginTop="16sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView24"
+            app:srcCompat="@drawable/plotmodel"
+            tools:src="@drawable/plotmodel" />
+
+        <TextView
+            android:id="@+id/textView25"
+            android:layout_width="347sp"
+            android:layout_height="59sp"
+            android:layout_marginStart="24sp"
+            android:layout_marginTop="16sp"
+            android:text="Selanjutnya kita melakukan model fit dengan ketentuan berikut."
+            android:textColor="@color/black"
+            android:textSize="13sp"
+            android:textStyle=""
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/imageView11" />
+
+        <ImageView
+            android:id="@+id/imageView12"
+            android:layout_width="354sp"
+            android:layout_height="137sp"
+            android:layout_marginStart="24sp"
+            android:layout_marginTop="16sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView25"
+            app:srcCompat="@drawable/fit"
+            tools:src="@drawable/fit" />
+
+        <TextView
+            android:id="@+id/textView26"
+            android:layout_width="347sp"
+            android:layout_height="59sp"
+            android:layout_marginStart="24sp"
+            android:layout_marginTop="16sp"
+            android:text="Berikut adalah hasil akurasi model , yakni 94,5%"
+            android:textColor="@color/black"
+            android:textSize="13sp"
+            android:textStyle=""
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/imageView12" />
+
+        <ImageView
+            android:id="@+id/imageView13"
+            android:layout_width="354sp"
+            android:layout_height="137sp"
+            android:layout_marginStart="24sp"
+            android:layout_marginTop="16sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView26"
+            app:srcCompat="@drawable/akurasi"
+            tools:src="@drawable/akurasi" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>
